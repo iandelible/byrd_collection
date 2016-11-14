@@ -1,0 +1,2 @@
+module SpydersHelper
+end
