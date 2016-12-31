@@ -18,16 +18,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <a class="navbar-brand" href="#">Birds vs Spiders</a>
+          <ul class="nav navbar-nav">
+            <li><%= link_to root_path do %>
+              <h1 class="brand-tag">Birds vs Spiders</h1>
+            </li><% end %>
+          </ul>
         </div>
     
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="#">Link</a></li>
+            <li><%= link_to new_reason_path do %>
+                  <h2> You Decide!</h2>
+            </li><% end %>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->

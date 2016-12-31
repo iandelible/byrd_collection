@@ -1,6 +1,9 @@
 <h1>Enter Your Reason</h1>
-<% simple_form_for @reason do |f| %>
-    <%= f.input :advantage %>
-    <%= f.input :reason %>
-    <%= f.submit :'Submit'  %>
+<%= simple_form_for @reason do |f| %>
+    <h2>Bird or Spider has the advantage?</h2>
+        <%= f.input :advantage %>
+    <h2>Why?</h2>
+        <%= f.input :reason %>
+        <br/>
+        <%= f.submit :'Submit', class: 'btn btn-danger' %>
 <% end %>
