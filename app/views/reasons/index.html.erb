@@ -1,6 +1,8 @@
 <h1>Birds vs Spiders</h1>
 <h2>Can you imagine these animals going head to head?</h2>
+    <% if @reason != nil %>
     <h3> The </h3>
     <h4> <%= @reason.advantage %> </h4>
     <h3> is better because...</h3>
     <h4> <%= @reason.reason %></h4>
+    <% end %>
